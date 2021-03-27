@@ -1,0 +1,14 @@
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+
+graphql:
+  servlet:
+    actuator-metrics: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
